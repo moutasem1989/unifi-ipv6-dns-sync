@@ -1,0 +1,8 @@
+[Unit]
+Description=Sync local IPv6 address with UniFi DNS record
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/sync_ipv6_dns.sh
