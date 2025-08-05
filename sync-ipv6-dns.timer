@@ -1,9 +1,9 @@
 [Unit]
-Description=Run sync-ipv6-dns daily
+Description=Run sync-ipv6-dns hourly
 
 [Timer]
 OnBootSec=5min
-OnUnitActiveSec=1d
+OnUnitActiveSec=60min
 Unit=sync-ipv6-dns.service
 
 [Install]
